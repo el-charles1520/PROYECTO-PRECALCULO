@@ -1,0 +1,102 @@
+
+/* =========================================
+   CONVENCIÓN 2026 — BOTONES DE NAVEGACIÓN
+   Minimalistas, circulares y sin texto visible
+========================================= */
+
+[data-convention-prev],
+[data-convention-next] {
+    appearance: none;
+    -webkit-appearance: none;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 44px;
+    height: 44px;
+    min-width: 44px;
+    min-height: 44px;
+    padding: 0;
+
+    border: 1px solid #dce8e2;
+    border-radius: 50%;
+
+    background: #ffffff;
+    color: #123d32;
+
+    font-family: Arial, sans-serif;
+    font-size: 0;
+    line-height: 1;
+
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(18, 61, 50, 0.10);
+
+    transition:
+        background-color 0.2s ease,
+        color 0.2s ease,
+        border-color 0.2s ease,
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+/* Flecha izquierda: Anterior */
+[data-convention-prev]::before {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+
+    border-left: 2px solid currentColor;
+    border-bottom: 2px solid currentColor;
+
+    transform: translateX(2px) rotate(45deg);
+}
+
+/* Flecha derecha: Siguiente */
+[data-convention-next]::before {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+
+    border-top: 2px solid currentColor;
+    border-right: 2px solid currentColor;
+
+    transform: translateX(-2px) rotate(45deg);
+}
+
+/* Efecto al pasar el cursor */
+[data-convention-prev]:hover,
+[data-convention-next]:hover {
+    background: #123d32;
+    border-color: #123d32;
+    color: #ffffff;
+
+    transform: scale(1.07);
+    box-shadow: 0 4px 12px rgba(18, 61, 50, 0.18);
+}
+
+/* Efecto al presionar */
+[data-convention-prev]:active,
+[data-convention-next]:active {
+    transform: scale(0.95);
+}
+
+/* Accesibilidad con teclado */
+[data-convention-prev]:focus-visible,
+[data-convention-next]:focus-visible {
+    outline: 3px solid #e7b83f;
+    outline-offset: 3px;
+}
+
+/* Adaptación para celulares */
+@media (max-width: 600px) {
+    [data-convention-prev],
+    [data-convention-next] {
+        width: 40px;
+        height: 40px;
+        min-width: 40px;
+        min-height: 40px;
+    }
+}

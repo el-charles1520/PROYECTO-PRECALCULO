@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Videos educativos de Álgebra y ecuaciones en PreCalc Pro.">
+    <title>Módulo 1 | PreCalc Pro</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="img/logo.png">
+
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/videos.css">
+    <script src="js/videos.js" defer></script>
+</head>
+<body data-module="1">
+    <header class="header">
+        <div class="container nav">
+            <a class="brand" href="index.html">
+                <img class="logo" src="img/logo.png" alt="Logo PreCalc Pro">
+                <span>PreCalc <strong>Pro</strong></span>
+            </a>
+
+            <nav class="nav-links" id="nav-links">
+                <a href="index.html">Inicio</a>
+                <a href="modulos.html">Módulos</a>
+                <a href="modulos.html#creadores">Creadores</a>
+            </nav>
+
+            <button class="menu-toggle" id="menu-toggle"
+                    type="button" aria-label="Abrir menú" aria-expanded="false">☰</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="video-hero">
+            <div class="container">
+                <a class="back-link" href="modulos.html">← Volver a los módulos</a>
+                <span class="eyebrow">MÓDULO 1</span>
+                <h1>Álgebra y <span>ecuaciones</span></h1>
+                <p>Aprende paso a paso con explicaciones y videos educativos.</p>
+            </div>
+        </section>
+
+        <section class="video-section container">
+            <div class="video-layout">
+                <div class="video-main">
+                    <div class="video-player" id="video-player"></div>
+
+                    <div class="video-information">
+                        <span class="topic-badge" id="video-module-label">Módulo 1</span>
+                        <h2 id="video-title">Selecciona un tema</h2>
+                        <p id="video-description">Elige un tema para comenzar.</p>
+                    </div>
+
+                    <div class="topic-navigation">
+                        <button class="btn btn-outline" id="previous-video" type="button">
+                            ← Tema anterior
+                        </button>
+                        <button class="btn btn-primary" id="next-video" type="button">
+                            Siguiente tema →
+                        </button>
+                    </div>
+                </div>
+
+                <aside class="video-sidebar">
+                    <div class="sidebar-heading">
+                        <div>
+                            <span class="eyebrow">CONTENIDO</span>
+                            <h2>Temas del módulo</h2>
+                        </div>
+                        <span class="topic-count" id="topic-count">4 temas</span>
+                    </div>
+                    <div class="topic-list" id="topic-list"></div>
+                </aside>
+            </div>
+        </section>
+
+        <section class="recommendations-section">
+            <div class="container">
+                <div class="section-heading">
+                    <span class="eyebrow">SIGUE APRENDIENDO</span>
+                    <h2>Videos recomendados</h2>
+                    <p>Descubre temas de los otros módulos de PreCalc Pro.</p>
+                </div>
+                <div class="recommendations-grid" id="recommendations-grid"></div>
+            </div>
+        </section>
+
+        <section class="module-switch-section container">
+            <div>
+                <span class="eyebrow">EXPLORA MÁS</span>
+                <h2>Continúa tu recorrido por Precálculo</h2>
+                <p>Explora geometría analítica y funciones.</p>
+            </div>
+            <div class="module-switch-buttons">
+                <a class="btn btn-outline" href="modulo2.html">Módulo 2</a>
+                <a class="btn btn-primary" href="modulo3.html">Módulo 3</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <p>© <span id="current-year"></span> PreCalc Pro. Proyecto educativo.</p>
+            <a href="modulos.html">Ver todos los módulos ↑</a>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,427 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#185744">
+    <meta name="description" content="PreCalc Pro: aprende Precálculo con videos tutoriales creados por nuestro equipo.">
+
+    <title>PreCalc Pro | Aprende Precálculo</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="img/logo.png">
+
+    <!-- ESTILOS -->
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/convencion.css">
+
+    <!-- JAVASCRIPT -->
+    <script src="js/main.js" defer></script>
+    <script src="js/convencion.js" defer></script>
+</head>
+
+<body>
+
+    <!-- ENCABEZADO -->
+    <header class="header">
+        <nav class="nav container" aria-label="Navegación principal">
+
+            <a class="brand" href="index.html#inicio" aria-label="PreCalc Pro, inicio">
+                <span class="logo">
+                    <img src="img/logo.png" alt="Logo de PreCalc Pro">
+                </span>
+                <span>PreCalc <b>Pro</b></span>
+            </a>
+
+            <button
+                class="menu-toggle"
+                type="button"
+                aria-label="Abrir menú"
+                aria-expanded="false"
+                aria-controls="nav-links">
+                ☰
+            </button>
+
+            <div class="nav-links" id="nav-links">
+                <a class="active" href="index.html#inicio">Inicio</a>
+                <a href="modulos.html#modulos">Módulos</a>
+                <a href="modulos.html#creadores">Creadores</a>
+                <a href="modulos.html#convencion-2026">Convención 2026</a>
+            </div>
+
+            <a class="btn btn-primary nav-btn" href="modulos.html#modulos">
+                Explorar curso ↗
+            </a>
+
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- PORTADA -->
+        <section class="hero" id="inicio">
+
+            <div class="orb orb-one"></div>
+            <div class="orb orb-two"></div>
+
+            <div class="container hero-grid">
+
+                <div class="hero-copy">
+
+                    <span class="eyebrow">
+                        <i></i>
+                        TU ESPACIO PARA APRENDER
+                    </span>
+
+                    <h1>
+                        Comprende el Precálculo.
+                        <span>Avanza paso a paso.</span>
+                    </h1>
+
+                    <p>
+                        Aprende con PreCalc Pro, una plataforma educativa
+                        con videos tutoriales grabados por nuestro equipo.
+                        Explora los temas, comprende los procedimientos
+                        y aprende a tu propio ritmo.
+                    </p>
+
+                    <div class="actions">
+                        <a class="btn btn-primary" href="modulos.html#modulos">
+                            Explorar módulos <span>↗</span>
+                        </a>
+
+                        <a class="btn btn-outline" href="#presentacion">
+                            Conocer el proyecto ↓
+                        </a>
+                    </div>
+
+                    <div class="proof">
+                        <span class="proof-icon">✓</span>
+                        <p>
+                            <b>16 videos de Precálculo</b>
+                            <small>Organizados en 3 módulos de aprendizaje</small>
+                        </p>
+                    </div>
+
+                </div>
+
+                <!-- ILUSTRACIÓN MATEMÁTICA -->
+                <div class="hero-visual">
+
+                    <span class="decor decor-star">✳</span>
+
+                    <article class="math-board">
+
+                        <div class="board-head">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <b>PRECALC PRO</b>
+                        </div>
+
+                        <div class="board-body">
+
+                            <small class="board-label">
+                                EXPLORA · COMPRENDE · APRENDE
+                            </small>
+
+                            <h2>f(x) = <em>x²</em> + 2x + 1</h2>
+
+                            <div class="graph">
+                                <svg viewBox="0 0 320 160" role="img"
+                                     aria-label="Gráfica ilustrativa de una función cuadrática">
+                                    <defs>
+                                        <pattern id="grid" width="20" height="20"
+                                                 patternUnits="userSpaceOnUse">
+                                            <path d="M20 0H0V20" fill="none"
+                                                  stroke="#dce9e4" stroke-width="1"/>
+                                        </pattern>
+                                    </defs>
+
+                                    <rect width="320" height="160" fill="url(#grid)"/>
+
+                                    <path d="M12 80H308 M160 8V152"
+                                          stroke="#9bb6a9" stroke-width="1.5"/>
+
+                                    <path d="M65 15 Q160 205 255 15"
+                                          fill="none" stroke="#16815e"
+                                          stroke-width="4" stroke-linecap="round"/>
+
+                                    <circle cx="160" cy="150" r="4" fill="#e7b83f"/>
+                                </svg>
+                            </div>
+
+                            <div class="board-foot">
+                                <span>● Aprende paso a paso</span>
+                                <b>MATEMÁTICAS</b>
+                            </div>
+
+                        </div>
+                    </article>
+
+                    <div class="float-card float-top">
+                        <small>APRENDE A TU RITMO</small>
+                        <b>¡Tú puedes! ✓</b>
+                    </div>
+
+                    <div class="float-card float-bottom">
+                        <span>∑</span>
+                        <div>
+                            <b>Aprende haciendo</b>
+                            <small>Un tema a la vez</small>
+                        </div>
+                    </div>
+
+                    <span class="decor decor-plus">＋</span>
+
+                </div>
+            </div>
+
+            <div class="hero-line"></div>
+        </section>
+
+        <!-- MÓDULOS -->
+        <section class="section modules-section" id="modulos">
+
+            <div class="container">
+
+                <div class="section-heading">
+                    <span class="eyebrow">TU RUTA DE APRENDIZAJE</span>
+
+                    <h2>Explora nuestros <span>3 módulos</span></h2>
+
+                    <p>
+                        Dieciséis videos organizados para avanzar desde el
+                        álgebra hasta las funciones. Entra al catálogo para
+                        conocer los temas de cada módulo.
+                    </p>
+                </div>
+
+                <div class="module-grid">
+
+                    <!-- MÓDULO 1 -->
+                    <article class="module-card green">
+                        <span class="module-number">01</span>
+                        <div class="module-icon">∑</div>
+
+                        <small class="module-tag">MÓDULO 01 · 5 VIDEOS</small>
+
+                        <h3>Álgebra y ecuaciones</h3>
+
+                        <p>
+                            Domina las expresiones algebraicas, las ecuaciones
+                            y la resolución de problemas.
+                        </p>
+
+                        <a class="module-link" href="modulos.html#modulos">
+                            Explorar módulo <span>↗</span>
+                        </a>
+                    </article>
+
+                    <!-- MÓDULO 2 -->
+                    <article class="module-card blue">
+                        <span class="module-number">02</span>
+                        <div class="module-icon">⌖</div>
+
+                        <small class="module-tag">MÓDULO 02 · 6 VIDEOS</small>
+
+                        <h3>Geometría analítica y rectas</h3>
+
+                        <p>
+                            Comprende las coordenadas, la pendiente
+                            y las ecuaciones de las rectas.
+                        </p>
+
+                        <a class="module-link" href="modulos.html#modulos">
+                            Explorar módulo <span>↗</span>
+                        </a>
+                    </article>
+
+                    <!-- MÓDULO 3 -->
+                    <article class="module-card yellow">
+                        <span class="module-number">03</span>
+                        <div class="module-icon">ƒ(x)</div>
+
+                        <small class="module-tag">MÓDULO 03 · 5 VIDEOS</small>
+
+                        <h3>Funciones y gráficas</h3>
+
+                        <p>
+                            Interpreta funciones, analiza gráficas
+                            y estudia polinomios y sus ceros.
+                        </p>
+
+                        <a class="module-link" href="modulos.html#modulos">
+                            Explorar módulo <span>↗</span>
+                        </a>
+                    </article>
+
+                </div>
+
+                <p class="module-note">
+                    Primero selecciona un módulo en el catálogo para consultar
+                    sus temas y después abrir los videos.
+                </p>
+
+                <div class="actions">
+                    <a class="btn btn-primary" href="modulos.html#modulos">
+                        Ver catálogo de módulos ↗
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- PRESENTACIÓN DEL PROYECTO -->
+        <section class="section project-section" id="presentacion">
+
+            <div class="container project-panel">
+
+                <div class="study-art">
+
+                    <div class="art-circle"></div>
+
+                    <div class="notebook">
+
+                        <div class="notebook-head">
+                            PRECALC PRO
+                            <span>● ● ●</span>
+                        </div>
+
+                        <div class="notebook-body">
+
+                            <small>APRENDE CON EJEMPLOS</small>
+
+                            <strong>y = mx + b</strong>
+
+                            <div class="fake-line"></div>
+                            <div class="fake-line short"></div>
+
+                            <svg viewBox="0 0 240 90" role="img"
+                                 aria-label="Ejemplo gráfico de una recta">
+                                <path d="M10 75H230 M35 5V85"
+                                      stroke="#b7cfc1" stroke-width="1.5"/>
+
+                                <path d="M35 75L205 15"
+                                      stroke="#2463a6" stroke-width="3"
+                                      stroke-linecap="round"/>
+
+                                <circle cx="120" cy="45" r="4" fill="#e7b83f"/>
+                            </svg>
+
+                        </div>
+                    </div>
+
+                    <span class="art-spark">✳</span>
+                </div>
+
+                <div class="project-copy">
+
+                    <span class="eyebrow">APRENDER DE OTRA MANERA</span>
+
+                    <h2>
+                        Entiende primero.
+                        <span>Practica después.</span>
+                    </h2>
+
+                    <p>
+                        PreCalc Pro es un proyecto educativo desarrollado
+                        por estudiantes que comparten sus conocimientos
+                        mediante videos tutoriales de Precálculo.
+                    </p>
+
+                    <div class="benefit-list">
+
+                        <div class="benefit">
+                            <span>✓</span>
+                            <div>
+                                <b>Videos creados por nuestro equipo</b>
+                                <small>Explicaciones elaboradas y grabadas por nosotros.</small>
+                            </div>
+                        </div>
+
+                        <div class="benefit">
+                            <span>✓</span>
+                            <div>
+                                <b>Contenido organizado</b>
+                                <small>Temas distribuidos en tres módulos de aprendizaje.</small>
+                            </div>
+                        </div>
+
+                        <div class="benefit">
+                            <span>✓</span>
+                            <div>
+                                <b>Aprendizaje paso a paso</b>
+                                <small>Avanza de acuerdo con tu ritmo de estudio.</small>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <a class="btn btn-primary" href="modulos.html#modulos">
+                        Comenzar a aprender ↗
+                    </a>
+
+                </div>
+            </div>
+        </section>
+
+ 
+        <!-- CREADORES -->
+        <section class="creators" id="creadores">
+
+            <div class="container creators-inner">
+
+                <div class="creator-symbol">✦</div>
+
+                <div class="creator-copy">
+                    <span class="eyebrow light">CONOCE A NUESTRO EQUIPO</span>
+
+                    <h2>Detrás de cada video, hay un equipo.</h2>
+
+                    <p>
+                        Somos los creadores de PreCalc Pro y trabajamos
+                        para compartir los temas del curso de forma
+                        clara y organizada.
+                    </p>
+                </div>
+
+                <a class="btn btn-light" href="modulos.html#creadores">
+                    Conocer creadores ↗
+                </a>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- PIE DE PÁGINA -->
+    <footer class="footer">
+
+        <div class="container footer-main">
+
+            <a class="brand" href="index.html#inicio">
+                <span class="logo">
+                    <img src="img/logo.png" alt="Logo de PreCalc Pro">
+                </span>
+                <span>PreCalc <b>Pro</b></span>
+            </a>
+
+            <p>Un paso a la vez. Un tema a la vez.</p>
+
+            <a class="back-top" href="#inicio">Volver arriba ↑</a>
+
+        </div>
+
+        <div class="footer-bottom">
+            <span>© <span id="year"></span> PreCalc Pro</span>
+            <span>Proyecto educativo de Precálculo</span>
+        </div>
+
+    </footer>
+
+</body>
+</html>

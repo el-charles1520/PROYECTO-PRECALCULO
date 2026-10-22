@@ -1,0 +1,478 @@
+
+/* ========================================
+   PORTADA DEL CATÁLOGO
+======================================== */
+
+.catalog-hero {
+    position: relative;
+    overflow: hidden;
+    padding: 65px 0 40px;
+    background: linear-gradient(115deg, #f0f9f2, #eff5ff);
+}
+
+.catalog-hero-inner {
+    position: relative;
+    z-index: 1;
+    max-width: 850px;
+    text-align: center;
+}
+
+.catalog-hero h1 {
+    margin: 18px 0;
+    color: var(--dark);
+    font-size: clamp(38px, 5vw, 58px);
+    font-weight: 800;
+    line-height: 1.17;
+    letter-spacing: -2px;
+}
+
+.catalog-hero h1 span {
+    display: block;
+    color: var(--green);
+}
+
+.catalog-hero-inner > p {
+    max-width: 610px;
+    margin: 0 auto;
+    color: var(--muted);
+    font-size: 12px;
+    line-height: 1.9;
+}
+
+.catalog-hero .actions {
+    justify-content: center;
+}
+
+.catalog-stats {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin-top: 35px;
+}
+
+.catalog-stats div {
+    display: grid;
+    gap: 3px;
+}
+
+.catalog-stats strong {
+    color: var(--green);
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.catalog-stats span {
+    color: var(--muted);
+    font-size: 10px;
+}
+
+
+/* ========================================
+   TARJETAS DE MÓDULOS
+======================================== */
+
+.catalog-section {
+    padding-top: 65px;
+    padding-bottom: 70px;
+}
+
+.catalog-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.catalog-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 300px;
+    padding: 25px;
+    overflow: hidden;
+    border: 1px solid transparent;
+    border-radius: 19px;
+    transition: transform 0.25s, box-shadow 0.25s;
+}
+
+.catalog-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 17px 40px #193a3512;
+}
+
+.catalog-green {
+    border-color: #d8ebde;
+    background: linear-gradient(145deg, #f0f9f2, #e2f2e7);
+}
+
+.catalog-blue {
+    border-color: #dce7f8;
+    background: linear-gradient(145deg, #f0f6ff, #e4edfc);
+}
+
+.catalog-yellow {
+    border-color: #f1e4bf;
+    background: linear-gradient(145deg, #fffaf0, #fff2d3);
+}
+
+.catalog-card-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.catalog-number {
+    color: #688476;
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.catalog-symbol {
+    display: grid;
+    place-items: center;
+    width: 49px;
+    height: 49px;
+    border-radius: 14px;
+    background: #ffffffc9;
+    color: var(--green);
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.catalog-blue .catalog-symbol {
+    color: var(--blue);
+}
+
+.catalog-yellow .catalog-symbol {
+    color: #ad8217;
+}
+
+.topic-count {
+    margin-top: 20px;
+    color: #688476;
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.catalog-card h3 {
+    margin: 8px 0;
+    color: var(--dark);
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.catalog-card p {
+    flex: 1;
+    margin: 0 0 23px;
+    color: #61786d;
+    font-size: 10px;
+    line-height: 1.9;
+}
+
+.catalog-button {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    align-self: flex-start;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    color: var(--green);
+    font-size: 10px;
+    font-weight: 700;
+}
+
+.catalog-button span {
+    font-size: 16px;
+    transition: transform 0.2s;
+}
+
+.catalog-button:hover span {
+    transform: translate(3px, -2px);
+}
+
+
+/* ========================================
+   PRESENTACIÓN DE LOS CREADORES
+======================================== */
+
+.creators-intro {
+    padding: 55px 0;
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+    background: #f5faf6;
+    text-align: center;
+}
+
+.creators-intro .container {
+    max-width: 760px;
+}
+
+.creators-intro h2 {
+    margin: 13px 0;
+    color: var(--dark);
+    font-size: clamp(27px, 3.5vw, 39px);
+    line-height: 1.35;
+    letter-spacing: -1px;
+}
+
+.creators-intro h2 span {
+    display: block;
+    color: var(--green);
+}
+
+.creators-intro p {
+    max-width: 630px;
+    margin: 0 auto;
+    color: var(--muted);
+    font-size: 11px;
+    line-height: 2;
+}
+
+
+/* ========================================
+   CUADRÍCULA DE ESTUDIANTES
+======================================== */
+
+.creators-section {
+    padding-top: 65px;
+    padding-bottom: 75px;
+}
+
+.student-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+}
+
+.student-card {
+    min-width: 0;
+    overflow: hidden;
+    border: 1px solid #e3eee7;
+    border-radius: 17px;
+    background: white;
+    box-shadow: 0 7px 25px #193a3508;
+    transition: transform 0.25s, box-shadow 0.25s;
+}
+
+.student-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 15px 35px #193a3514;
+}
+
+
+/* Espacio para la fotografía */
+
+.student-photo {
+    position: relative;
+    display: grid;
+    place-items: center;
+    aspect-ratio: 4 / 3;
+    overflow: hidden;
+}
+
+.photo-green {
+    background: linear-gradient(135deg, #e7f5ea, #d7eddf);
+}
+
+.photo-blue {
+    background: linear-gradient(135deg, #eaf2fc, #d9e8fb);
+}
+
+.photo-yellow {
+    background: linear-gradient(135deg, #fff5d9, #f9e8b8);
+}
+
+.student-photo img {
+    position: absolute;
+    inset: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    color: #527464;
+    font-size: 10px;
+    text-align: center;
+}
+
+/* Identificador del estudiante */
+
+.photo-label {
+    position: absolute;
+    right: 12px;
+    bottom: 12px;
+    z-index: 1;
+    display: grid;
+    place-items: center;
+    width: 34px;
+    height: 34px;
+    border: 1px solid #ffffffaa;
+    border-radius: 10px;
+    background: #ffffffdf;
+    color: var(--dark);
+    font-size: 11px;
+    font-weight: 700;
+}
+
+
+/* Información de cada integrante */
+
+.student-info {
+    padding: 20px;
+}
+
+.student-role {
+    color: var(--green);
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: 1.1px;
+}
+
+.student-info h3 {
+    margin: 9px 0 17px;
+    color: var(--dark);
+    font-size: 15px;
+    line-height: 1.5;
+    overflow-wrap: anywhere;
+}
+
+.student-info h4 {
+    margin: 0 0 7px;
+    color: #355b49;
+    font-size: 10px;
+    line-height: 1.6;
+}
+
+.student-info p {
+    margin: 0;
+    color: var(--muted);
+    font-size: 10px;
+    line-height: 1.9;
+    overflow-wrap: anywhere;
+}
+
+
+/* ========================================
+   INVITACIÓN FINAL
+======================================== */
+
+.catalog-cta {
+    padding: 42px 0;
+    background: var(--dark);
+    color: white;
+}
+
+.catalog-cta-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.catalog-cta h2 {
+    margin: 10px 0;
+    font-size: clamp(23px, 3vw, 32px);
+    line-height: 1.4;
+}
+
+.catalog-cta p {
+    margin: 0;
+    color: #c6ded1;
+    font-size: 10px;
+    line-height: 1.8;
+}
+
+.catalog-cta .btn-light {
+    flex-shrink: 0;
+}
+
+
+/* ========================================
+   TABLETAS
+======================================== */
+
+@media (max-width: 900px) {
+    .catalog-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .catalog-card:last-child {
+        grid-column: 1 / -1;
+    }
+
+    .student-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+
+/* ========================================
+   CELULARES
+======================================== */
+
+@media (max-width: 680px) {
+    .catalog-hero {
+        padding: 48px 0 35px;
+    }
+
+    .catalog-hero h1 {
+        font-size: clamp(35px, 9vw, 45px);
+        letter-spacing: -1.5px;
+    }
+
+    .catalog-hero-inner > p {
+        font-size: 11px;
+    }
+
+    .catalog-stats {
+        gap: 35px;
+        margin-top: 28px;
+    }
+
+    .catalog-stats strong {
+        font-size: 22px;
+    }
+
+    .catalog-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .catalog-card:last-child {
+        grid-column: auto;
+    }
+
+    .catalog-card {
+        min-height: 270px;
+    }
+
+    .creators-intro {
+        padding: 45px 0;
+    }
+
+    .creators-intro h2 {
+        font-size: 28px;
+    }
+
+    .student-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .student-photo {
+        aspect-ratio: 5 / 3;
+    }
+
+    .student-info {
+        padding: 19px;
+    }
+
+    .student-info h3 {
+        font-size: 17px;
+    }
+
+    .catalog-cta-inner {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}
