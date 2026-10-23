@@ -121,7 +121,7 @@ const modulesData = {
                 title: "Análisis de funciones",
                 description: "Aprende a interpretar las características y el comportamiento de una función.",
                 videoUrl: "",
-                youtubeId: "tqxwrqY7u0k"
+                youtubeId: "06VTwIgS7SM"
             },
             {
                 id: "funciones-polinomiales",
@@ -136,6 +136,13 @@ const modulesData = {
                 description: "Aprende qué son los ceros reales de una función y cómo identificarlos.",
                 videoUrl: "",
                 youtubeId: "_gwzBQzEYVQ"
+            },
+            {
+                id: "funciones-cuadraticas",
+                title: "Funciones cuadráticas",
+                description: "Aprende qué son las funciones cuadráticas, cómo se representan mediante parábolas y cuáles son sus principales características.",
+                videoUrl: "",
+                youtubeId: "tqxwrqY7u0k"
             }
         ]
     }
@@ -254,7 +261,6 @@ document.addEventListener("DOMContentLoaded", () => {
         });
 
         topicCount.textContent = `${currentModule.topics.length} temas`;
-
         updateNavigationButtons();
     }
 
@@ -319,7 +325,10 @@ document.addEventListener("DOMContentLoaded", () => {
             player.replaceChildren(video);
             video.load();
 
-        } else if (youtubeId) {
+        } else if (
+            youtubeId &&
+            youtubeId !== "REEMPLAZAR_CON_ID_DE_YOUTUBE"
+        ) {
             const iframe = document.createElement("iframe");
 
             iframe.src =
@@ -342,7 +351,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
         topicList.querySelectorAll(".topic-item").forEach((button, i) => {
             button.classList.toggle("active", i === index);
-            button.setAttribute("aria-current", i === index ? "true" : "false");
+            button.setAttribute(
+                "aria-current",
+                i === index ? "true" : "false"
+            );
         });
 
         updateNavigationButtons();
@@ -401,7 +413,7 @@ document.addEventListener("DOMContentLoaded", () => {
             const localUrl = (topic.videoUrl || "").trim();
             const youtubeId = (topic.youtubeId || "").trim();
 
-            // Mantener las vistas previas MP4 existentes.
+            /* Mantener las vistas previas MP4 existentes. */
             if (localUrl) {
                 const preview = document.createElement("video");
 
@@ -419,8 +431,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
                 thumbnail.appendChild(preview);
 
-            // NUEVO: mostrar la miniatura de YouTube.
-            } else if (youtubeId) {
+            /* Mostrar la miniatura de YouTube. */
+            } else if (
+                youtubeId &&
+                youtubeId !== "REEMPLAZAR_CON_ID_DE_YOUTUBE"
+            ) {
                 const image = document.createElement("img");
 
                 image.src =
@@ -429,7 +444,6 @@ document.addEventListener("DOMContentLoaded", () => {
                 image.alt = `Miniatura del video: ${topic.title}`;
                 image.loading = "lazy";
 
-                // Ajustar la imagen al espacio existente sin cambiar el CSS.
                 image.style.position = "absolute";
                 image.style.inset = "0";
                 image.style.width = "100%";
